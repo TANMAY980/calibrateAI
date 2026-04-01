@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calibrate AI — Build Smarter</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="calibrateAi.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Calibrate<span>.</span>AI</a>
+    <ul class="nav-links">
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="#faq">FAQ</a>
+  <button class="btn-sm btn-sm-fill">Get started free</button>
+</div>
+
+<!-- ══════════════ HERO WRAPPER ══════════════ -->
+<div class="hero-wrapper" id="heroWrap">
+  <section class="hero" id="heroSec">
+    <div class="hero-inner wrap">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h2 class="reveal rd1">The strategic intelligence your business deserves. Now within reach.<br>with <span class="hl">Calibrate AI</span></h2>
+          <p class="hero-sub reveal rd2">Describe your vision in plain language. Calibrate builds, tests, and deploys production apps while you focus on what mattersCalibrate is an AI-native consulting platform that delivers actionable strategic recommendations — in your language, at your price point, connected to execution.</p>
+          <div class="reveal rd3">
+            <div class="prompt-label">Try a prompt</div>
+            <div class="prompt-box">
+              <textarea id="aiPrompt" rows="1" placeholder="Describe what you want to build..."></textarea>
+              <button class="prompt-send">↑</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right reveal rd2">
+          <div class="hero-dash">
+            <div class="dash-mock">
+              <div class="dash-topbar">
+                <div class="dash-dot dash-dot-r"></div><div class="dash-dot dash-dot-y"></div><div class="dash-dot dash-dot-g"></div>
+                <div class="dash-title-bar"></div>
+              </div>
+              <div class="dash-metrics">
+                <div class="dash-metric"><div class="dash-m-val">4.2K</div><div class="dash-m-label">Active users</div></div>
+                <div class="dash-metric"><div class="dash-m-val" style="color:#16a34a">↑73%</div><div class="dash-m-label">Time saved</div></div>
+                <div class="dash-metric"><div class="dash-m-val">0.3s</div><div class="dash-m-label">Response</div></div>
+              </div>
+              <div class="dash-chart-area">
+                <div class="dash-chart-label">Weekly builds</div>
+                <div class="dash-bars">
+                  <div class="dash-bar" style="height:40%"></div><div class="dash-bar mid" style="height:60%"></div>
+                  <div class="dash-bar" style="height:35%"></div><div class="dash-bar hi" style="height:85%"></div>
+                  <div class="dash-bar mid" style="height:65%"></div><div class="dash-bar" style="height:50%"></div>
+                  <div class="dash-bar hi" style="height:92%"></div>
+                </div>
+              </div>
+              <div class="dash-tags">
+                <span class="dash-tag dt-g">✓ Tests passing</span>
+                <span class="dash-tag dt-p">✦ AI-powered</span>
+                <span class="dash-tag dt-b">⚡ Edge deployed</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float"><div class="fi">⚡</div><div><div class="fl">Built in 28 sec</div><div class="fs">last generation</div></div></div>
+          <div class="hero-float hero-float-2"><div class="fi">🟢</div><div><div class="fl">Live on edge</div><div class="fs">99.9% uptime</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="about-section" id="aboutSec">
+  <div class="wrap">
+    <span class="tag">THE CONSULTING INTELLIGENCE CONSOLE</span>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2>Not a chatbot. Not a search engine. A consulting session that works the way a real strategist would.</h2>
+        <p style="margin-top:14px;">Tailored coaching to help you unlock your full potential and succeed in every race — wherever you are in your journey.</p>
+      </div>
+      <div class="about-img reveal rd1">
+        <svg viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="sk" x1="0" y1="0" x2=".3" y2="1"><stop offset="0%" stop-color="#c0c9d5"/><stop offset="100%" stop-color="#d2c7b6"/></linearGradient>
+            <radialGradient id="sn" cx="75%" cy="18%" r="32%"><stop offset="0%" stop-color="rgba(255,210,130,.5)"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+            <filter id="sf"><feGaussianBlur stdDeviation="5"/></filter>
+            <filter id="vs"><feGaussianBlur stdDeviation="9"/></filter>
+          </defs>
+          <rect width="520" height="400" fill="url(#sk)"/>
+          <ellipse cx="390" cy="70" rx="170" ry="150" fill="url(#sn)"/>
+          <ellipse cx="55" cy="260" rx="55" ry="88" fill="#8a9e72" opacity=".42" filter="url(#vs)"/>
+          <ellipse cx="475" cy="245" rx="68" ry="105" fill="#7a9262" opacity=".36" filter="url(#vs)"/>
+          <rect x="0" y="330" width="520" height="70" fill="#8a7a5a" opacity=".52" filter="url(#sf)"/>
+          <rect x="250" y="185" width="106" height="160" rx="17" fill="#1a2234"/>
+          <rect x="250" y="185" width="51" height="160" rx="17" fill="#222c42"/>
+          <ellipse cx="303" cy="135" rx="40" ry="44" fill="#c09070"/>
+          <ellipse cx="303" cy="102" rx="40" ry="22" fill="#4e4848"/>
+          <ellipse cx="288" cy="128" rx="6" ry="5" fill="#1e1208"/>
+          <ellipse cx="318" cy="128" rx="6" ry="5" fill="#1e1208"/>
+          <path d="M299 140 Q303 151 307 140" stroke="#9a7858" stroke-width="1.5" fill="none"/>
+          <ellipse cx="306" cy="350" rx="58" ry="9" fill="rgba(0,0,0,.14)" filter="url(#sf)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="cards3-grid">
+      <div class="c3-card reveal">
+        <h3>YOU TALK, IT UNDERSTANDS</h3>
+        <p>
+        No prompt engineering required. The AI Literacy Equaliser handles the translation between plain language and consulting-grade queries. Output quality depends on Calibrate’s architecture, not your AI skills.</p>
+      </div>
+
+      <div class="c3-card reveal rd1">
+        <h3>IT DIAGNOSES, NOT JUST ANSWERS</h3>
+        <p>Intent classification determines whether your growth question is about customer acquisition, geographic expansion, product extension, or revenue optimisation — and routes accordingly. Every session gets smarter with context.</p>
+      </div>
+      <div class="c3-card reveal rd2">
+        <h3>IT REMEMBERS YOUR BUSINESS</h3>
+        <p>User context engineering builds a persistent understanding of your business — your competitive position, seasonal patterns, recurring challenges. Session five is sharper than session one.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FEATURES — 3 stacking white cards ══════════════ -->
+<section class="features-section" id="features">
+  <div class="feat-header reveal">
+    <span class="tag">Features</span>
+    <h2 class="section-title">How Calibrate solves it</h2>
+    <p class="section-sub" style="font-size:14px;">Three problems every business owner knows. Three ways Calibrate changes the outcome.</p>
+  </div>
+  <div class="feat-cards-wrapper" id="featWrap">
+    <div class="feat-cards-sticky" id="featSticky">
+      <div class="feat-card-stack" id="featStack">
+        <div class="feat-card" id="fCard0">
+          <div class="feat-card-content">
+            <div class="feat-card-num">The strategy gap</div>
+            <h3>YOU MAKE EVERY DECISION ALONE</h3>
+            <p>Growth, pricing, competition, hiring — every strategic decision sits on one pair of shoulders. No frameworks. No second opinion. No expert in the room.</p>
+            <div>
+              <ul>
+                <li>CALIBRATE SOLVES THIS:</li>
+              <li>Consulting-grade strategic recommendations</li>
+              <li>Frameworks from proven methodologies</li>
+              <li>Prioritised, actionable next steps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="feat-card" id="fCard1">
+          <div class="feat-card-content">
+            <div class="feat-card-num">The fragmentation tax</div>
+            <h3>YOU SPEND ON VENDORS WITHOUT DIRECTION</h3>
+            <p>Agencies running ads, freelancers handling tasks, five tools that don’t talk to each other. The spend is real. The strategic direction connecting it all is not.</p>
+            <div>
+              <ul>
+                <li>CALIBRATE SOLVES THIS:</li>
+              <li>One platform, strategy to execution</li>
+              <li>Frameworks from proven methodologies</li>
+              <li>Agentic marketplace replaces patchwork</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="feat-card" id="fCard2">
+          <div class="feat-card-content">
+            <div class="feat-card-num">The language and access barrier</div>
+            <h3>THE TOOLS WEREN’T BUILT FOR YOU</h3>
+            <p>English-first interfaces. AI that demands perfect prompts. Consulting priced at $600 per hour. Every path to
+              strategic guidance assumed a user you’re not</p>
+            <ul>
+              <li>CALIBRATE SOLVES THIS:</li>
+              <li>Multilingual consulting, natively built</li>
+              <li>Zero AI literacy required</li>
+              <li>Strategic guidance from $9/month</li>
+            </ul>
+        
+          </div>
+        </div>
+        <div class="feat-dots" id="featDots">
+          <div class="feat-dot on"></div>
+          <div class="feat-dot"></div>
+          <div class="feat-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ HOW IT WORKS ══════════════ -->
+<section class="howitworks-section" id="how-it-works">
+  <div class="howitworks-header reveal wrap">
+    <span class="tag">How Calibrate helps you grow</span>
+    <h2 class="section-title">A strategic partner in your corner. Not a tool on your screen</h2>
+  </div>
+  <div class="howitworks-inner" id="hiwInner">
+    <!-- Left sticky text -->
+    <div class="hiw-text-col">
+      <div class="hiw-step active" data-i="0">
+        <div class="hiw-step-text">
+          <h3>Strategic clarity</h3>
+          <p>When your next big decision keeps you up at night — a new market, a pricing change, a competitive threat — Calibrate gives you a structured path forward instead of guesswork.</p>
+        </div>
+        <div class="hiw-inline-img">
+          <div class="hiw-img-frame"><div class="mock m1">
+            <div class="m1-hdr"><div class="m1-logo">Calibrate AI</div><div class="m1-badge">● GENERATING</div></div>
+            <div class="m1-prompt"><div class="m1-pl">Your prompt</div><div class="m1-pt">Create a SaaS dashboard with auth<span class="cur"></span></div></div>
+            <div class="m1-out"><div class="m1-ol">Generated files</div><div class="m1-files">
+              <div class="m1-f"><div class="fd fd-g"></div>/app/dashboard/page.tsx</div>
+              <div class="m1-f"><div class="fd fd-p"></div>/components/Chart.tsx</div>
+              <div class="m1-f"><div class="fd fd-b"></div>/lib/stripe.ts</div>
+            </div><div class="m1-pb"><div class="m1-pf"></div></div></div>
+          </div></div>
+        </div>
+      </div>
+      <div class="hiw-step" data-i="1">
+        <div class="hiw-step-text">
+          <h3>Execution confidence</h3>
+          <p>Calibrate doesn’t just tell you what to do and leave you to figure out how. It stays with you from strategy through execution — campaigns running, leads qualifying, progress tracked.</p>
+        </div>
+        <div class="hiw-inline-img">
+          <div class="hiw-img-frame"><div class="mock m2">
+            <div class="m2-sb"><div class="m2-brand">Calibrate</div><div class="m2-ni on">📄 dashboard.tsx</div><div class="m2-ni">🔐 auth.ts</div><div class="m2-ni">📊 Chart.tsx</div></div>
+            <div class="m2-main"><div class="m2-tb"><button class="m2-t on">Code</button><button class="m2-t">Preview</button><button class="m2-t">Diff</button></div>
+            <div class="m2-code"><div style="display:flex"><span class="ln">1</span><span class="ck">export default </span><span class="cf">function</span><span class="cw"> Dashboard() {</span></div><div class="diff-row" style="display:flex"><span class="ln">5</span><span class="diff-a">+ &lt;Chart type="area" /&gt;</span></div><div style="display:flex"><span class="ln">6</span><span class="diff-d">&lt;BarChart /&gt;</span></div></div></div>
+          </div></div>
+        </div>
+      </div>
+      <div class="hiw-step" data-i="2">
+        <div class="hiw-step-text">
+          <h3>Growth on your terms</h3>
+          <p>Your business, your language, your schedule. Calibrate meets you where you are — at 11pm after the kids are asleep, at 6am before the shop opens.</p>
+        </div>
+        <div class="hiw-inline-img">
+          <div class="hiw-img-frame"><div class="mock m3">
+            <div class="m3-bar"><div class="m3-dot m3-r"></div><div class="m3-dot m3-y"></div><div class="m3-dot m3-g"></div><span class="m3-url">deploy → production</span></div>
+            <div class="m3-code"><div><span class="cg">✓</span> <span class="cw2">Bundle optimized (94kB)</span></div><div><span class="cg">✓</span> <span class="cw2">24 edge regions active</span></div><div><span class="cg">✓</span> <span class="cw2">SSL provisioned</span></div><div><span class="cc">▶ Live:</span> <span class="cp">your-app.calibrate.dev</span></div></div>
+            <div class="m3-metrics"><div class="m3-m"><div class="m3-mv">0.28s</div><div class="m3-ml">Cold start</div></div><div class="m3-m"><div class="m3-mv" style="color:#34d399">99.9%</div><div class="m3-ml">Uptime</div></div><div class="m3-m"><div class="m3-mv" style="color:#22d3ee">24</div><div class="m3-ml">Regions</div></div></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: single image col -->
+    <div class="hiw-img-col">
+  <div class="hiw-img-item">
+    <div class="hiw-img-frame">
+      <div class="mock m1">
+        <div class="m1-hdr">
+          <div class="m1-logo">Calibrate AI</div>
+          <div class="m1-badge">● GENERATING</div>
+        </div>
+
+        <div class="m1-prompt">
+          <div class="m1-pl">Your prompt</div>
+          <div class="m1-pt">
+            Create a SaaS dashboard with auth, charts, and billing
+            <span class="cur"></span>
+          </div>
+        </div>
+
+        <div class="m1-out">
+          <div class="m1-ol">Generated files</div>
+          <div class="m1-files">
+            <div class="m1-f"><div class="fd fd-g"></div>/app/dashboard/page.tsx</div>
+            <div class="m1-f"><div class="fd fd-p"></div>/components/Chart.tsx</div>
+            <div class="m1-f"><div class="fd fd-b"></div>/lib/stripe.ts</div>
+          </div>
+          <div class="m1-pb"><div class="m1-pf"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- ══════════════ FOUNDER 3 CARDS SECTION ══════════════ -->
+<section class="cards3-section">
+
+  <div class="wrap">
+
+    <div class="cards3-grid">
+
+      <!-- CEO -->
+      <div class="c3-card">
+        <img src="https://i.pravatar.cc/150?img=3" class="c3-avatar">
+        <h3>Rahul Sharma</h3>
+
+        <p>
+          <strong>CEO - The consulting access gap in SMBs</strong><br>
+          “I co-founded an advertising agency where a third of our clients were small businesses. The pattern was always the same — corporate clients had a strategy connecting every campaign, every hire, every dollar. Our SMB clients had the same ambition and the same complexity, but no strategic spine holding anything together. They weren’t less capable. They just couldn’t afford the one thing that would have changed everything: someone sitting across the table, looking at the whole picture, and saying ‘here’s what to do next.’ That’s what Calibrate is. The advisor they deserved and never had access to.”
+        </p>
+
+        <a href="#" class="li-btn">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 11.001-4.121A2.06 2.06 0 015.34 7.43zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/>
+          </svg>
+          Connect
+        </a>
+      </div>
+
+      <!-- CTO -->
+      <div class="c3-card">
+        <img src="https://i.pravatar.cc/150?img=5" class="c3-avatar">
+        <h3>Rahul Sharma</h3>
+
+        <p>
+          <strong>CTO — Agentic products changing the agency/vendor landscape</strong><br>
+          “I’ve spent years building systems for large organisations — companies with dedicated teams, integrated tools, and execution infrastructure that runs like clockwork. Then I’d look at the SMB clients we worked alongside: five disconnected apps, three vendors who’d never spoken to each other, and a business owner spending hours every week just coordinating the chaos. The technology to fix this exists now. Agentic execution — AI agents that don’t just recommend but actually do the work — can replace that entire patchwork. Not someday. Today. That’s what we’re building.”
+        </p>
+
+        <a href="#" class="li-btn">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 11.001-4.121A2.06 2.06 0 015.34 7.43zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/>
+          </svg>
+          Connect
+        </a>
+      </div>
+
+      <!-- CMO -->
+      <div class="c3-card">
+        <img src="https://i.pravatar.cc/150?img=8" class="c3-avatar">
+        <h3>John</h3>
+
+        <p>
+          <strong>CMO — The growth opportunity in the untapped SMB market</strong><br>
+          “There are 63 million small businesses in India alone. Most of them are run by people who are brilliant operators — managing inventory, negotiating with suppliers, building customer relationships — doing everything right at the ground level. But when it comes to the bigger questions — should I enter this market, is my pricing right, how do I compete with the new player down the road — they’re entirely on their own. The consulting industry looked at this market, measured it, published reports about it, and decided it wasn’t worth serving. We looked at the same market and saw 63 million businesses that deserve better.”
+        </p>
+
+        <a href="#" class="li-btn">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 11.001-4.121A2.06 2.06 0 015.34 7.43zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/>
+          </svg>
+          Connect
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="wrap">
+    <div class="test-header reveal"><span class="tag">Testimonials</span><h2>Loved by builders worldwide</h2><p style="margin-top:10px;">Real stories from real teams shipping faster with Calibrate AI.</p></div>
+    <div class="test-cards-grid">
+      <div class="test-card-item reveal">
+        <div><p class="test-quote">"$466B The global consulting market. Built for 5% of businesses. Calibrate serves the other 95%."</p></div>
+        <div class="test-author-row"><div class="test-author"><div class="test-av av-a">SK</div><div><div class="test-name">Sara K.</div><div class="test-role">Co-founder @ Linktree</div></div></div></div>
+      </div>
+      <div class="test-card-item reveal rd1">
+        <div><p class="test-quote">"250M+ SMBs worldwide navigating growth, competition, and pricing without any strategic guidance"</p></div>
+        <div class="test-author-row"><div class="test-author"><div class="test-av av-b">MR</div><div><div class="test-name">Marcus R.</div><div class="test-role">Lead Engineer @ Vercel</div></div></div></div>
+      </div>
+      <div class="test-card-item reveal rd2">
+        <div><p class="test-quote">"5 proprietary layers Prompt generation, user context, intent classification, consulting intelligence, agentic execution."</p></div>
+        <div class="test-author-row"><div class="test-author"><div class="test-av av-c">JP</div><div><div class="test-name">Jamie P.</div><div class="test-role">CTO @ Loom</div></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PRICING ══════════════ -->
+<section class="pricing-section" id="pricing">
+  <div class="wrap">
+    <div class="pricing-header reveal">
+      <span class="tag">Pricing</span>
+      <h2>Strategic guidance at a price that makes sense for the decisions you’re making.</h2>
+      <p style="margin-top:10px;font-size:14px;">You’re already spending $2,500–3,200 per year on agencies, freelancers, and disconnected tools — without a strategy connecting any of it. Calibrate costs a fraction of that and makes the rest of it work.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="p-card reveal"><div class="p-tier">Free</div><div class="p-amt"><sup>$</sup><span class="pnum" data-m="0" data-a="0">0</span></div><div class="p-per">Free forever</div><button class="p-btn pb-out">Get started free</button><ul class="p-feats"><li>Free Limited consulting access</li><li>See what strategic guidance feels like</li><li>No credit card required</li></ul></div>
+      <div class="p-card feat reveal rd1"><div class="p-badge">MOST POPULAR</div><div class="p-tier">CORE</div><div class="p-amt"><sup>$</sup><span class="pnum" data-m="29" data-a="20">9</span></div><div class="p-per pper">per month</div><button class="p-btn pb-fill">Start Pro trial</button><ul class="p-feats"><li>Full consulting intelligence across growth</li><li>strategy, and marketing</li><li>Your strategic operating layer.</li><li>Private deployments</li></ul></div>
+      <div class="p-card reveal rd2"><div class="p-tier">PRO</div><div class="p-amt" style="font-size:32px;padding:5px 0"><sup>$</sup><span class="pnum" data-m="29" data-a="20">15</span></div><div class="p-per">per month</div><button class="p-btn pb-out">Talk to sales</button><ul class="p-feats"><li>Everything in Pro</li><li>Everything in Core plus deployable skills</li><li>Financial planning</li><li>competitive intelligence</li><li>market entry</li><li>Deeper expertise on demand.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-header reveal">
+      <span class="tag">FAQ</span>
+      <h2>Everything you need to know</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text"> How is this different from ChatGPT?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">ChatGPT is a general-purpose AI. Getting consulting-quality output requires knowing how to prompt — structuring context, specifying domain, validating against frameworks. Calibrate handles all of that behind the scenes. You describe your situation in plain language. Five proprietary layers do the rest. And unlike ChatGPT, Calibrate’s agents execute recommendations directly — the loop closes on the platform.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">My chartered accountant already advises me on strategy.</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Your CA is critical for compliance, tax, and financial reporting. Strategic consulting is a different discipline: competitive positioning, growth prioritisation, pricing design, market entry. Calibrate provides the strategic layer your CA was never trained to deliver. The two are complementary.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">I already have a marketing agency.</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Calibrate doesn’t replace your agency — it makes your agency’s work more effective. Most SMBs spend on agencies without strategic direction connecting the spend. Calibrate provides that direction. Adding it is the most frictionless purchase you can make: it improves the return on spending you’re already doing.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Is my business data safe?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Calibrate uses OAuth-based data protection. Your business data never becomes training material for general-purpose models. This is an architectural decision, not a policy.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">What languages are supported?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Hindi and English at launch. Tamil, Marathi, Gujarati, Telugu, Kannada on the expansion roadmap. Calibrate’s multilingual capability processes business context at the semantic level — recommendations are natively generated, not translated.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Will this replace my consultant?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">No. Calibrate delivers entry-to-mid-level consultant quality — transformative for the 95% of SMBs that have never had any strategic guidance. For deeper advisory, the platform connects you with human strategists. We amplify consultants. We don’t replace them.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <div class="contact-header reveal"><span class="tag">Contact</span><h2>Get in touch</h2><p class="section-sub" style="font-size:14px;margin-top:10px;">Have a question, want a demo, or ready to go enterprise? We'd love to hear from you.</p></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3>Let's talk about your project</h3>
+        <p style="margin-top:12px;font-size:14px;">Whether you're a solo founder or a growing team, we're here to help you ship faster. We'll get back to you within 24 hours.</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="c-ico">📧</div><div class="c-txt"><h4>Email us</h4><p>hello@calibrate.ai</p></div></div>
+          <div class="contact-item"><div class="c-ico">💬</div><div class="c-txt"><h4>Live chat</h4><p>Mon–Fri, 9am–6pm IST</p></div></div>
+          <div class="contact-item"><div class="c-ico">🏢</div><div class="c-txt"><h4>Office</h4><p>Bengaluru, Karnataka, India</p></div></div>
+        </div>
+      </div>
+      <div class="reveal rd1">
+        <div class="contact-form">
+          <div class="form-row"><div class="fg"><label for="cf-name">Full name</label><input type="text" id="cf-name" placeholder="Your name"></div><div class="fg"><label for="cf-email">Email address</label><input type="email" id="cf-email" placeholder="you@company.com"></div></div>
+          <div class="fg"><label for="cf-sub">Subject</label><select id="cf-sub"><option value="">Select a topic</option><option>General enquiry</option><option>Book a demo</option><option>Enterprise pricing</option><option>Technical support</option><option>Partnership</option></select></div>
+          <div class="fg"><label for="cf-msg">Message</label><textarea id="cf-msg" placeholder="Tell us what you're building..."></textarea></div>
+          <button class="form-submit" id="formSubmit">Send message →</button>
+          <div class="form-success" id="formSuccess"><span></span> Thanks! We'll be in touch within 24 hours.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CTA ══════════════ -->
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-inner reveal">
+      <span class="tag">Get started today</span>
+      <h2>You’ve been making every strategic decision alone. That changes today.</h2>
+      <p style="margin-top:12px;">Start with your first strategic question. It’s free. No credit card. No commitment. Just the guidance your business deserves,</p>
+      <div class="cta-btns" style="margin-top:36px;">
+        <button class="btn-cta-main">Get your first strategy →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">Calibrate<span>.</span>AI</span>
+        <p class="footer-tagline">Build powerful AI tools and launch faster with intelligent code generation.</p>
+        <div class="footer-social"><a class="soc-btn" href="#">𝕏</a><a class="soc-btn" href="#">in</a><a class="soc-btn" href="#">gh</a><a class="soc-btn" href="#">yt</a></div>
+      </div>
+      <div class="footer-col"><h5>Product</h5><a href="#">Features</a><a href="#">Pricing</a><a href="#">Integrations</a><a href="#">Changelog</a><a href="#">Roadmap</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Press</a><a href="#">Contact</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="#">Docs</a><a href="#">API Reference</a><a href="#">Community</a><a href="#">Status</a><a href="#">Help</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Calibrate AI, Inc.</p>
+      <div class="footer-blinks"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+<script src="calibrateAi.js"/>
+</body>
+</html>
